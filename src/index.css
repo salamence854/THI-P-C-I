@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  --color-wedding-primary: #1A365D; /* Elegant Navy Blue */
+  --color-wedding-secondary: #D9CFC4; /* Light beige */
+  --color-wedding-bg: #FDFBF7; /* Off-white background */
+  --color-wedding-text: #333333;
+  --color-wedding-accent: #2A4365; /* Lighter Navy Blue */
+}
+
+@layer base {
+  body {
+    @apply bg-wedding-bg text-wedding-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
