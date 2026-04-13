@@ -14,34 +14,36 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6 tracking-widest uppercase text-sm md:text-base font-light"
-        >
-          Save The Date
-        </motion.div>
+      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 h-full w-full">
+        <div className="absolute top-24 md:top-32 lg:relative lg:top-auto flex flex-col items-center w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mb-6 tracking-widest uppercase text-sm md:text-base font-light drop-shadow-md"
+          >
+            Save The Date
+          </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          className="font-script text-6xl md:text-8xl lg:text-9xl mb-4 drop-shadow-lg"
-        >
-          Ngọc Minh <br className="md:hidden" /> <span className="text-4xl md:text-6xl mx-4">&</span> <br className="md:hidden" /> Thu Hương
-        </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.5 }}
+            className="font-script text-6xl md:text-8xl lg:text-9xl mb-4 drop-shadow-lg"
+          >
+            Ngọc Minh <br className="md:hidden" /> <span className="text-4xl md:text-6xl mx-4">&</span> <br className="md:hidden" /> Thu Hương
+          </motion.h1>
+        </div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-8 flex flex-col items-center space-y-2"
+          className="absolute bottom-28 md:bottom-32 lg:relative lg:bottom-auto lg:mt-12 flex flex-col items-center space-y-2 w-full px-4"
         >
-          <p className="text-xl md:text-2xl font-serif tracking-wider">28 . 04 . 2026</p>
-          <div className="w-16 h-px bg-white/70 my-4" />
-          <p className="text-sm md:text-base font-light tracking-widest uppercase">Trống Đồng Lãng Yên, Hà Nội</p>
+          <p className="text-xl md:text-2xl font-serif tracking-wider drop-shadow-md">28 . 04 . 2026</p>
+          <div className="w-16 h-px bg-white/70 my-3 md:my-4" />
+          <p className="text-sm md:text-base font-light tracking-widest uppercase drop-shadow-md">Trống Đồng Lãng Yên, Hà Nội</p>
         </motion.div>
       </div>
 
